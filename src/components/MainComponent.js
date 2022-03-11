@@ -7,8 +7,8 @@ function MainComponent() {
 
   return (
     <>
-      <div className="container w-25">
-        <div className="wrapper">
+      
+        <div className="wrapper col-xs-2  col-sm-2 mx-auto">
           <div className=" d-flex align-items-end flex-column" id="display">
             {result ? <p>{`${display}  ${result}`}</p> : <p> {display || 0}</p>}
             <p>
@@ -17,7 +17,7 @@ function MainComponent() {
           </div>
           <input
             type="button"
-            className="btn btn-danger btn-lg "
+            className="btn btn-danger btn-lg"
             value="AC"
             id="clear"
             onClick={clear}
@@ -143,8 +143,9 @@ function MainComponent() {
             id="decimal"
             onClick={() => handleDisplay(".")}
           />
+         
         </div>
-      </div>
+      
     </>
   );
 }
