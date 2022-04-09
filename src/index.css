@@ -91,6 +91,9 @@ body {
 a {
   text-decoration: none;
 }
+.resultDisplay{
+  height: 20px;
+}
 @media (min-width: 668px) {
   .wrapper {
     display: grid;

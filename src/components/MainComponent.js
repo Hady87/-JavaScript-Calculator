@@ -8,11 +8,11 @@ function MainComponent() {
   return (
     <>
       
-        <div className="wrapper col-4  col-sm-3 col-md-3 mx-auto">
+        <div className="wrapper col-6  col-sm-3 col-md-3 mx-auto">
           <div className=" d-flex align-items-end flex-column" id="display">
-            {result ? <p>{`${display}  ${result}`}</p> : <p> {display || 0}</p>}
-            <p>
-              <strong>{result || 0}</strong>
+            {result ? <p>{`${display}  ${result}`}</p> : <p > {display || 0}</p>}
+            <p className="resultDisplay">
+              <strong >{result}</strong>
             </p>
           </div>
           <input
